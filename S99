@@ -1,0 +1,84 @@
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+local Window = Library:NewWindow("Script")
+ 
+local Tab = Window:NewSection("Credits: FxZ Hub")
+
+Tab:CreateToggle("Inf. All 💀", function(no)
+_G.GetWins = no
+while _G.GetWins== true do
+    wait() 
+
+local args = {
+	"MadeVideoManually"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent_3"):FireServer(unpack(args))
+
+local args = {
+	"MadeVideoManually"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent_3"):FireServer(unpack(args))
+
+local args = {
+	"MadeVideoManually"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent_3"):FireServer(unpack(args))
+
+
+end
+end)
+
+Tab:CreateToggle("Auto Rebirth", function(no)
+_G.GetWins = no
+while _G.GetWins== true do
+    wait() 
+
+local args = {
+	"BuyRebirth",
+	1
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent_1"):FireServer(unpack(args))
+
+end
+end)
+
+local Tab = Window:NewSection("Upgrades")
+
+Tab:CreateButton("Cooking Speed", function()
+
+local args = {
+	"Upgrade",
+	"Wifi"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent_2"):FireServer(unpack(args))
+
+end)
+
+Tab:CreateButton("Quantity of Food", function()
+
+local args = {
+	"Upgrade",
+	"ManualRev"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent_3"):FireServer(unpack(args))
+
+end)
+
+Tab:CreateButton("Better Management", function()
+
+local args = {
+	"Upgrade",
+	"FriendRev"
+}
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent_4"):FireServer(unpack(args))
+
+end)
+
+local Tab = Window:NewSection("Links")
+ 
+Tab:CreateButton("Discord Group", function()
+print("HI")
+ 
+setclipboard("https://discord.gg/f9CEfBPJ")
+toclipboard("https://discord.gg/f9CEfBPJ")
+ 
+end)
